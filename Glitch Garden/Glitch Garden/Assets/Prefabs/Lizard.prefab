@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4838159182443094036
+--- !u!1 &2822458665149692025
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4838159182443094034}
-  - component: {fileID: 4838159182443094035}
-  - component: {fileID: 4838159182443094033}
-  - component: {fileID: 4838159182443094032}
-  - component: {fileID: 1323478704447025563}
-  - component: {fileID: 2331921083039038482}
-  - component: {fileID: -4026469939055867421}
+  - component: {fileID: 4382667543527780667}
+  - component: {fileID: 3461065248834666878}
   m_Layer: 0
-  m_Name: Lizard
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4838159182443094034
+--- !u!4 &4382667543527780667
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4838159182443094036}
+  m_GameObject: {fileID: 2822458665149692025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.54, y: 3.44, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 4838159182443094034}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4838159182443094035
+--- !u!212 &3461065248834666878
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4838159182443094036}
+  m_GameObject: {fileID: 2822458665149692025}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,18 +69,54 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -1128813155181456575, guid: 86624fe6575cc6f498a1701fd0383360,
+  m_Sprite: {fileID: -4709280254044599183, guid: 86624fe6575cc6f498a1701fd0383360,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.83, y: 0.88}
+  m_Size: {x: 2.51, y: 1.86}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &4838159182443094036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4838159182443094034}
+  - component: {fileID: 4838159182443094033}
+  - component: {fileID: 4838159182443094032}
+  - component: {fileID: 1323478704447025563}
+  - component: {fileID: 2331921083039038482}
+  - component: {fileID: -4026469939055867421}
+  m_Layer: 0
+  m_Name: Lizard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4838159182443094034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838159182443094036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.54, y: 3.44, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4382667543527780667}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &4838159182443094033
 Animator:
   serializedVersion: 3
@@ -157,11 +188,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
-  durationOfExplosion: 1
-  deathSound: {fileID: 8300000, guid: b012edc60aa073c4c99e61b1563ce71d, type: 3}
-  deathSoundVolume: 0.75
-  fireSound: {fileID: 8300000, guid: b012edc60aa073c4c99e61b1563ce71d, type: 3}
-  fireSoundVolume: 0.75
 --- !u!50 &-4026469939055867421
 Rigidbody2D:
   serializedVersion: 4

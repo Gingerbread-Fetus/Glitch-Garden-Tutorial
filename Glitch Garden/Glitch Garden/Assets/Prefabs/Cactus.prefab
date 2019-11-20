@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8815060388849490000}
   - component: {fileID: 4655829093674364364}
+  - component: {fileID: 5158758966146921752}
+  - component: {fileID: 5118175670209619638}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -45,6 +47,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starCost: 100
+--- !u!114 &5158758966146921752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8815060388849490007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cab1e7718c748684ca6b56d77d7ca248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1030326809699162110, guid: 3b68b69aafbfedb41a7afbae2c067234,
+    type: 3}
+  gun: {fileID: 8815060389866857033}
+--- !u!95 &5118175670209619638
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8815060388849490007}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 76deb352ca92d344d8d019b2b67d00c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8815060389266623517
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,8 +92,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8815060389266623513}
   - component: {fileID: 8815060389266623512}
-  - component: {fileID: 8815060389266623519}
-  - component: {fileID: 8815060389266623518}
   m_Layer: 0
   m_Name: Cactus Body
   m_TagString: Untagged
@@ -132,42 +166,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8815060389266623519
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1589812028355512676, guid: ecffbe5b0874005469e01129e8c2aacf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1769899037131463815}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8815060389266623517}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 76deb352ca92d344d8d019b2b67d00c9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8815060389266623518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1730976808048614676, guid: ecffbe5b0874005469e01129e8c2aacf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1769899037131463815}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8815060389266623517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cab1e7718c748684ca6b56d77d7ca248, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 1030326809699162110, guid: 3b68b69aafbfedb41a7afbae2c067234,
-    type: 3}
-  gun: {fileID: 8815060389866857033}
 --- !u!1 &8815060389866857033
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,32 +205,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8815060388849490000}
     m_Modifications:
-    - target: {fileID: 7123167888197921104, guid: ecffbe5b0874005469e01129e8c2aacf,
-        type: 3}
-      propertyPath: m_Name
-      value: Cactus Body
-      objectReference: {fileID: 0}
-    - target: {fileID: 1730976808048614676, guid: ecffbe5b0874005469e01129e8c2aacf,
-        type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 1030326809699162110, guid: 3b68b69aafbfedb41a7afbae2c067234,
-        type: 3}
-    - target: {fileID: 7123167888197921111, guid: ecffbe5b0874005469e01129e8c2aacf,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7123167888197921111, guid: ecffbe5b0874005469e01129e8c2aacf,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7123167888197921111, guid: ecffbe5b0874005469e01129e8c2aacf,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7123167888197921110, guid: ecffbe5b0874005469e01129e8c2aacf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -288,5 +260,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7123167888197921104, guid: ecffbe5b0874005469e01129e8c2aacf,
+        type: 3}
+      propertyPath: m_Name
+      value: Cactus Body
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123167888197921111, guid: ecffbe5b0874005469e01129e8c2aacf,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123167888197921111, guid: ecffbe5b0874005469e01129e8c2aacf,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123167888197921111, guid: ecffbe5b0874005469e01129e8c2aacf,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730976808048614676, guid: ecffbe5b0874005469e01129e8c2aacf,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1030326809699162110, guid: 3b68b69aafbfedb41a7afbae2c067234,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: ecffbe5b0874005469e01129e8c2aacf, type: 3}
