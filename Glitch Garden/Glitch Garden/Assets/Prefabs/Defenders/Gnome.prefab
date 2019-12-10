@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 1331865301407901306}
   - component: {fileID: 1331865301407901287}
   - component: {fileID: 1331865301407901286}
+  - component: {fileID: -933864164902404806}
   m_Layer: 0
   m_Name: Gnome
   m_TagString: Untagged
@@ -190,6 +191,20 @@ MonoBehaviour:
   projectile: {fileID: 3552291986034467459, guid: 97361da90edff1b4a8c0d2ad2cca1816,
     type: 3}
   gun: {fileID: 7476527733272442771}
+--- !u!114 &-933864164902404806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331865301407901307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d97aa0ebbab65e4b9dadf98d3c908c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathVFX: {fileID: 0}
 --- !u!1 &7476527733272442771
 GameObject:
   m_ObjectHideFlags: 0
