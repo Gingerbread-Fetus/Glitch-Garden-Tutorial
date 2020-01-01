@@ -25,6 +25,11 @@ public class LevelLoader : MonoBehaviour
         LoadNextScene();
     }
 
+    internal void LoadYouLose()
+    {
+        SceneManager.LoadScene("Lose Screen");
+    }
+
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
