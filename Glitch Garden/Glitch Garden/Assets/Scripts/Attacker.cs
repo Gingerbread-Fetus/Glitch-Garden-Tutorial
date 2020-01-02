@@ -53,7 +53,7 @@ public class Attacker : MonoBehaviour
         Health health = currentTarget.GetComponent<Health>();
         if (health)
         {
-            health.DealDamage(damage);
+            health.DealDamage(damage * PlayerPrefsController.GetDifficulty());
         }
     }
 }

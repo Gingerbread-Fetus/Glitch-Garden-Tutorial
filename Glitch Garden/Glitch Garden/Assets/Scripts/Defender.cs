@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Defender : MonoBehaviour
 {
-    [SerializeField] int starCost = 100;
+    [SerializeField] int defaultStarCost = 100;
 
     public void AddStars(int amount)
     {
@@ -13,6 +13,7 @@ public class Defender : MonoBehaviour
 
     public int GetStarCost()
     {
-        return starCost;
+        //On highest difficulty, prices should be doubled.
+        return defaultStarCost * (1 + PlayerPrefsController.GetDifficulty() / 10);
     }
 }

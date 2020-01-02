@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class AttackerSpawner : MonoBehaviour
 {
-    [SerializeField] float minSpawnDelay = 1f;
-    [SerializeField] float maxSpawnDelay = 5f;
+    [SerializeField] float minSpawnDelay = 3f;
+    [SerializeField] float maxSpawnDelay = 10f;
     [SerializeField] Attacker[] attackerPrefabArray;
 
     bool spawn = true;
@@ -13,7 +13,8 @@ public class AttackerSpawner : MonoBehaviour
     {
         while(spawn)
         {
-            yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
+            float timeToWait = Random.Range(minSpawnDelay, maxSpawnDelay);
+            yield return new WaitForSeconds(timeToWait);
             SpawnAttacker();
         }
     }
