@@ -26,7 +26,7 @@ public class HealthDisplay : MonoBehaviour
         UpdateDisplay();
         if (health <= 0)
         {
-            FindObjectOfType<LevelLoader>().LoadYouLose();
+            FindObjectOfType<LevelController>().HandleLoseCondition();
         }
     }
 }

@@ -7,5 +7,6 @@ public class DamageCollider : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         FindObjectOfType<HealthDisplay>().RemoveHealth();
+        Destroy(collision.gameObject);
     }
 }

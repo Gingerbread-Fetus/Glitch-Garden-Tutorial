@@ -30,14 +30,25 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene("Lose Screen");
     }
 
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(currentSceneIndex);
+        Time.timeScale = 1;
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Start Screen");
+        Time.timeScale = 1;
+    }
+
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void QuitGame()
     {
-        
+        Application.Quit();
     }
 }
